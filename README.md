@@ -1,11 +1,14 @@
 # probable-system
 Python Script to copy the largest file(s) from a folder with optional sub-folders into a destination folder.  
 
-If this structure below resembles what you have, this script helps you in copying and transferring the largest file based on size from each of the sub-directories.
+If this directory/folder structure below resembles what you have, this script helps you in copying and transferring the largest file based on size from each of the sub-directories.
 
 You can choose the largest file based on file type (.txt, .mp3, .doc, etc). 
 
-Note: The number of sub-directories/files could be any amount that you wish to have. Also, the word directory and folder are interchangable. 
+Note 1: The number of sub-directories/files could be any amount that you wish to have.
+
+Note 2: Also, the word directory and folder are interchangable and mean the same thing.
+
 ![file structure](https://github.com/ReStartQ/probable-system/blob/main/Structure.png)
 
 ## Simple run
