@@ -7,7 +7,7 @@ If this directory/folder structure below resembles what you have, this script he
 
 Note 1: The number of sub-directories and files could be any amount that you wish to have.
 
-Note 2: Also, the word directory and folder are interchangable and mean the same thing.
+Note 2: Also, the word directory, and folder are interchangable and mean the same thing.
 
 ![file structure](https://github.com/ReStartQ/probable-system/blob/main/Structure.png)
 
