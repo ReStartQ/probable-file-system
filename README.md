@@ -19,7 +19,7 @@ Then set the destination path
 
 Ex: C:\Users\MyUserName\OneDrive\Desktop\New Folder
 
-When it prompts for if you are doing it for osu, reply with y or yes. 
+When it prompts for whether this is for osu, reply with y or yes. 
 
 Note: Choosing no will let you input a file type but will go with a different naming standard compared to the osu standard.
 
