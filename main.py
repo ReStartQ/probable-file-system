@@ -4,7 +4,7 @@ import sys
 import shutil
 
 
-def file_creation(my_file_name, current_directory, destination_directory, my_counter, my_file_type):
+def file_creation(my_file_name, current_directory, destination_directory, my_counter, my_file_type, my_osu_flag, my_folder_name):
 
     file_exists = os.path.exists(destination_directory+'/'+my_file_name)
     # do whatever here to include counter in between file name and .
@@ -28,8 +28,13 @@ def file_creation(my_file_name, current_directory, destination_directory, my_cou
         print(current_directory)
         my_new_destination = destination_directory+'/'+new_file_name
         print(my_new_destination)
-        print('the file copied over is: ' + new_file_name)
+        if(my_osu_flag==False):
+            print('the file copied over is: ' + new_file_name)
+        else:
+            print('the file copied over is: ' + my_folder_name+'.mp3')
         shutil.copy(current_directory, my_new_destination)
+        if my_osu_flag == True:
+            os.rename(my_new_destination, destination_directory+'/'+my_folder_name+'.mp3')
 
 
 # Press the green button in the gutter to run the script.
@@ -59,6 +64,7 @@ if __name__ == '__main__':
     print('Enter the full destination path. ex:C:/Dir1/SubDir1/MyDestinationFolder')
 
     dir_target_location = input()
+
     if os.path.isdir(dir_target_location):
         # nothing
         print('this directory exists')
@@ -70,14 +76,18 @@ if __name__ == '__main__':
 
     print('The full path of the destination directory is: ' + dir_target_location)
 
-    print('What file type do you want? ex: .txt, .mp3')
+    print('Are you copying over mp3 files from Osu? y/n')
+    is_osu = input()
+    osu_flag = False
+    if is_osu.lower() == 'y' or is_osu.lower() == 'yes':
+        osu_flag = True
+    print(osu_flag)
+    file_type = '.mp3'
 
-    file_type = input()
-    if file_type.endswith('.mp3'):
-        print('checking')
-    else:
-        print('not valid input, exiting')
-        sys.exit(0)
+    if osu_flag == False:
+        print('What file type do you want? ex: .txt, .mp3')
+        file_type = input()
+
     my_list_dir = os.listdir(dir_name)
 
     for sub_dir in my_list_dir:
@@ -124,7 +134,4 @@ if __name__ == '__main__':
             print("The largest file is: " + max_file)
             print('Size: ' + str(max_size) + ' bytes')
             counter = 0;
-            file_creation(file_name, max_file, dir_target_location, counter, file_type)
-
-
-
+            file_creation(file_name, max_file, dir_target_location, counter, file_type, osu_flag, sub_dir)
