@@ -5,7 +5,7 @@ You can choose the largest file based on file type (.txt, .mp3, .doc, etc).
 
 If this directory/folder structure below resembles what you have, this script helps you in copying and transferring the largest file based on size from each of the sub-directories.
 
-This is an easy way to copy your songs from Osu because the game stores its mp3 files in the same structure below.
+This is also an easy way to copy your songs from Osu because the game stores its mp3 files in the same structure below.
 
 ![file structure](https://github.com/ReStartQ/probable-system/blob/main/Structure.png)
 
