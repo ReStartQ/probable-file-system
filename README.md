@@ -1,15 +1,32 @@
-# probable-system
+# probable-file-system
 Python Script to copy the largest file(s) from a folder with optional sub-folders into a destination folder.  
 
 You can choose the largest file based on file type (.txt, .mp3, .doc, etc). 
 
 If this directory/folder structure below resembles what you have, this script helps you in copying and transferring the largest file based on size from each of the sub-directories.
 
-Note 1: The number of sub-directories and files could be any amount that you wish to have.
-
-Note 2: Also, the word, directory and folder are interchangable and mean the same thing.
+This is an easy way to copy your songs from Osu because the game stores its mp3 files in the same structure below.
 
 ![file structure](https://github.com/ReStartQ/probable-system/blob/main/Structure.png)
+
+## Osu Song Copy Tutorial
+
+To do this with Osu, find the Songs folder path and input it as the initial directory.
+
+Ex: C:\Users\MyUserName\AppData\Local\osu!\Songs
+
+Then set the destination path
+
+Ex: C:\Users\MyUserName\OneDrive\Desktop\New Folder
+
+When it prompts for if you are doing it for osu, reply with y/yes. 
+
+Note: Choosing no will let you input a file type but will go with a different naming standard compared to the osu standard.
+
+
+
+
+
 
 ## Simple run
 To run this program just double click the main.py file.
