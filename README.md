@@ -10,18 +10,26 @@ This is also an easy way to copy songs from Osu because the game stores its mp3 
 ![file structure](https://github.com/ReStartQ/probable-system/blob/main/Structure.png)
 
 ## Osu Song Copy Tutorial
-
+<br/>
 To do this with Osu, find the Songs folder path and input it as the initial directory.
 
 Ex: C:\Users\MyUserName\AppData\Local\osu!\Songs
 
+<br/>
 Then set the destination path
 
 Ex: C:\Users\MyUserName\OneDrive\Desktop\New Folder
 
+<br>
 When it prompts for whether this is for osu, reply with y or yes. 
 
-Note: Choosing no will let you input a file type but will go with a different naming standard compared to the osu standard.
+Note: Choosing no will let you input a file type but will go with a different naming standard compared to the osu standard. 
+
+<br>
+The original naming standard will keep the original file name and increment the file's name if there is a naming conflict in the destination folder.
+
+The osu naming standard will rename the files to the name of the subdirectory and will default the file type to mp3.
+
 
 
 
