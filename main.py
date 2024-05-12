@@ -40,7 +40,7 @@ def file_creation(my_file_name, current_directory, destination_directory, my_cou
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # Prompt user to enter from path
-    print('Enter the full path that you want to transfer from. ex: C:\Users\MyUserName\AppData\Local\osu!\Songs')
+    print(r'Enter the full path that you want to transfer from. ex: C:\Users\MyUserName\AppData\Local\osu!\Songs')
 
     dir_name = input()
     if dir_name.endswith('/'):
@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     print('The full path of the initial directory is: ' + dir_name)
     # Prompt user to enter destination path
-    print('Enter the full destination path. ex: C:\Users\MyUserName\OneDrive\Desktop\New Folder')
+    print(r'Enter the full destination path. ex: C:\Users\MyUserName\OneDrive\Desktop\New Folder')
 
     dir_target_location = input()
 
